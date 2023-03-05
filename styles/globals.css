@@ -93,7 +93,7 @@ body {
   background: #0e0128;
 }
 .bg-grid {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   --line-width: 1px;
   --grid-gap: 40px;
@@ -113,7 +113,7 @@ body {
       transparent var(--grid-gap)
     );
   -webkit-mask-image: radial-gradient(closest-side, #000, #fff);
-  mix-blend-mode: luminosity;
+  /* mix-blend-mode: luminosity; */
 }
 
 a {
