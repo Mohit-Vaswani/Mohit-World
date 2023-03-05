@@ -35,7 +35,7 @@ export default function IdeaContainer() {
   }
 
   const currentIdea = data[currentIdeaIndex]?.idea;
-  const websiteUrl = "mohit.fun/AGoodIdea";
+  const websiteUrl = "mohitfun.fun/AGoodIdea";
   const tweetText = `I got a good idea: "${currentIdea}" cc: `;
 
   return (
