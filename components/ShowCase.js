@@ -11,7 +11,7 @@ import Footer from "./Footer";
 
 export default function Showcase() {
   return (
-    <Layout title={"Mohit Fun"}>
+    <Layout>
       <section className="bg-grid">
         <Header />
         <main className="h-auto flex flex-wrap gap-3 p-5 px-10 justify-left">

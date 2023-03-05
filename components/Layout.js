@@ -1,9 +1,10 @@
 import Head from 'next/head';
+import getConfig from 'next/config';
 
 const Layout = ({ title, description, keywords, children }) => {
-  const defaultTitle = 'Default Title';
-  const defaultDescription = 'Default Description';
-  const defaultKeywords = 'Default, Keywords';
+  const defaultTitle = 'Mohit.Fun';
+  const defaultDescription = 'Cool web-apps, tools, games, visualizations etc.';
+  const defaultKeywords = 'games, visualizations, nealfun, tools';
 
   return (
     <div>
