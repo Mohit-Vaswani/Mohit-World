@@ -19,9 +19,12 @@ export default function IdeaContainer() {
   }, [currentIdeaIndex, isSpacebarPressed]);
 
   useEffect(() => {
-    const handleResize = () => {
+    function handleResize() {
       setIsMobile(window.innerWidth < 1000);
-    };
+      if (window.innerWidth < 1000) {
+        setCurrentIdeaIndex(Math.floor(Math.random() * data.length));
+      }
+    }
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -36,7 +39,7 @@ export default function IdeaContainer() {
   const tweetText = `I got a good idea: "${currentIdea}" cc: `;
 
   return (
-    <section className="mt-16 sm:mt-24 px-10 lg:px-20">
+    <section id="AGoodIdea" className="mt-0 md:mt-24 px-0 md:px-10 lg:px-20">
       <div
         id="good_idea"
         className="w-full h-auto px-10 py-5 bg-slate-200 text-center"
@@ -47,22 +50,20 @@ export default function IdeaContainer() {
           more in just <span className="underline">one click</span>.
         </p>
       </div>
-      <div className="w-full h-auto flex flex-col justify-center items-center gap-5 p-5 md:p-10 bg-slate-200 mt-5">
+      <div className="w-full h-auto flex flex-col justify-center items-center gap-5 pt-10 md:pt-5 p-5 md:p-10 bg-slate-200  mt-0 md:mt-5">
         <h2
-          className={`text-base md:text-xl lg:text-3xl text-center px-6 md:px-20 capitalize text-gray-900`}
+          className={`text-base md:text-xl lg:text-3xl text-center px-6 md:px-20 capitalize text-sky-600`}
         >
-          {isSpacebarPressed
-            ? currentIdea
-            : "Click Spacebar to get a new Idea."}
+          {isMobile ? currentIdea : isSpacebarPressed ? currentIdea : "Click Spacebar to get a new Idea."}
         </h2>
-      {isMobile && (
-        <button
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
-        onClick={handleClick}
-        >
-          New Idea
-        </button>
-      )}
+        {isMobile && (
+          <button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
+            onClick={handleClick}
+          >
+            New Idea
+          </button>
+        )}
       </div>
       {currentIdea && (
         <div className="mt-4">
@@ -79,3 +80,5 @@ export default function IdeaContainer() {
     </section>
   );
 }
+
+

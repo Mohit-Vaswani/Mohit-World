@@ -144,10 +144,10 @@ a {
 
 /* A Good Idea */
 
-#good_idea h2{
-  font-family: 'Neucha', cursive;
+#AGoodIdea{
+  font-family: sans-serif;
 }
 
 #back-text{
-  font-family: 'Handlee', cursive;
+  font-family: 'Handlee', cursive !important;
 }
