@@ -4,7 +4,7 @@ import Layout from "@/components/Layout";
 
 export default function AGoodIdea() {
   return (
-    <Layout title={"A Good Idea"} description={"Find amazing ideas for apps, websites, diy and many more."}>
+    <Layout title={"A Good Idea"} description={"Find amazing ideas for apps, websites, diy and many more."} keywords={"idea generator, idea tools, neal-fun, web-tools"} favicon={"/goodidea.ico"}>
       <main className="w-full h-screen flex flex-col bg-slate-100 text-slate-900">
       <AppHeader/>
       <IdeaContainer />
