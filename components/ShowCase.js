@@ -3,6 +3,7 @@ import Image from "next/image";
 
 // Images
 import AGI from "../public/assets/AGI.png";
+import ITMGOB from "../public/assets/ITMGOB.png";
 
 // Components
 import Layout from "./Layout";
@@ -14,7 +15,15 @@ export default function Showcase() {
     <Layout>
       <section className="bg-grid">
         <Header />
-        <main className="h-auto flex flex-wrap gap-3 p-5 px-10 justify-left">
+        <main className="h-auto flex flex-wrap gap-8 p-5 px-10 justify-center">
+          <Link href="/IsThisMovieGoodOrBad">
+            <Image
+              src={ITMGOB}
+              alt="Is This Movie Good Or Bad"
+              width="350"
+              className="rounded-lg"
+            />
+          </Link>
           <Link href="/AGoodIdea">
             <Image
               src={AGI}
