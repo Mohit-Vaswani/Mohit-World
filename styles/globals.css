@@ -1,10 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
 
 :root {
   --max-width: 1100px;
@@ -130,8 +130,8 @@ a {
   }
 }
 
-.logo{
-  font-family: 'Handlee', cursive;
+.logo {
+  font-family: "Handlee", cursive;
 }
 
 #footer {
@@ -146,17 +146,63 @@ a {
 
 /* A Good Idea */
 
-#AGoodIdea{
+#AGoodIdea {
   font-family: sans-serif;
   /* font-family: 'Roboto Slab', serif; */
 }
 
-#back-text{
-  font-family: 'Handlee', cursive !important;
+#back-text {
+  font-family: "Handlee", cursive !important;
 }
 
 /* Is This Movie Good Or Bad */
 
-#movieContainer{
-  font-family: 'Karla', sans-serif;
+#movieContainer {
+  font-family: "Karla", sans-serif;
+}
+
+.movie-card {
+  width: 500px;
+  display: flex;
+  font-family: math;
+  justify-content: center;
+}
+
+.movie-overview {
+  overflow: hidden;
+  position: relative;
+}
+
+.movie-overview::after {
+  /* content: '...more'; */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.movie-overview.expanded {
+  height: auto;
+}
+
+.movie-overview.expanded::after {
+  /* content: '...less'; */
+}
+
+.Good{
+  color: green;
+}
+
+.Bad{
+  color: red;
+}
+
+.Average{
+  color: goldenrod;
+}
+
+.Amazing{
+  color: cyan;
+  stroke: #0e0128;
 }
