@@ -163,7 +163,6 @@ a {
 
 .movie-card {
   width: 500px;
-  display: flex;
   font-family: math;
   justify-content: center;
 }
@@ -205,4 +204,11 @@ a {
 .Amazing{
   color: cyan;
   stroke: #0e0128;
+}
+
+@media screen and (max-width: 640px) {
+  .movie-card {
+    width: 250px;
+    align-items: center;
+  }
 }

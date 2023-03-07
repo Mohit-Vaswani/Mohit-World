@@ -79,7 +79,7 @@ export default function MovieContainer() {
         {movies.map((movie) => (
           <div
             key={movie.id}
-            className="flex h-auto bg-white p-5 rounded-lg shadow-lg shadow-slate-300 movie-card"
+            className="flex flex-col sm:flex-row h-auto bg-white p-3 sm:p-5 rounded-lg shadow-lg shadow-slate-300 movie-card"
           >
             {movie.poster_path && (
               <Image
@@ -90,11 +90,11 @@ export default function MovieContainer() {
                 className="rounded-lg shadow-lg shadow-slate-800"
               />
             )}
-            <div className="p-3 pl-7 relative">
+            <div className="p-3 sm:pl-7 relative">
               <h2 className="text-xl text-neutral-700 font-semibold">
                 {movie.title}
               </h2>
-              <p className="absolute top-0 right-0 bg-yellow-500 rounded-3xl p-2 text-xs font-semibold text-white">
+              <p className="absolute bottom-0 sm:top-0 sm:bottom-auto right-0 bg-yellow-500 rounded-3xl p-2 text-xs font-semibold text-white">
                 {movie.vote_average}
               </p>
               {/* <p className="text-xl font-semibold py-2">{judgeMovie(movie.vote_average)}</p> */}
