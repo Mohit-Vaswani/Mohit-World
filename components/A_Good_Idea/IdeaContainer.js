@@ -39,7 +39,7 @@ export default function IdeaContainer() {
   const tweetText = `I got a good idea: "${currentIdea}" cc: `;
 
   return (
-    <section id="AGoodIdea" className="mt-0 md:mt-24 px-0 md:px-10 lg:px-20">
+    <section id="AGoodIdea" className="mt-16 md:mt-24 px-0 md:px-10 lg:px-20">
       <div
         id="good_idea"
         className="w-full h-auto px-10 py-5 bg-slate-200 text-center"

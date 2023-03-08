@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
 
 :root {
   --max-width: 1100px;
@@ -94,6 +95,7 @@ body {
   margin: 0;
   background: #0e0128;
   color: #fff;
+  font-family: monospace;
 }
 .bg-grid {
   width: 100%;
@@ -131,12 +133,11 @@ a {
 }
 
 .logo {
-  font-family: "Handlee", cursive;
+  font-family: monospace;
 }
 
 #footer {
   position: fixed;
-  height: 50px;
   bottom: 0px;
   left: 0px;
   right: 0px;
@@ -148,7 +149,7 @@ a {
 
 #AGoodIdea {
   font-family: sans-serif;
-  /* font-family: 'Roboto Slab', serif; */
+  /* margin-top: 4rem; */
 }
 
 #back-text {
