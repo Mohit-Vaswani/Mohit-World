@@ -37,6 +37,7 @@ export default function IdeaContainer() {
   const currentIdea = data[currentIdeaIndex]?.idea;
   const websiteUrl = "https://mohitfun.fun/AGoodIdea";
   const tweetText = `I got a good idea: "${currentIdea}" cc: `;
+  const encodedTweetText = encodeURIComponent(tweetText);
 
   return (
     <section id="AGoodIdea" className="mt-16 md:mt-24 px-0 md:px-10 lg:px-20">
@@ -73,9 +74,8 @@ export default function IdeaContainer() {
         <div className="mt-4">
           <TwitterShareButton
             url={websiteUrl}
-            title={tweetText}
+            title={encodedTweetText}
             hashtags={["goodidea"]}
-            via="your_twitter_handle"
             className="absolute right-0 bottom-0 m-6 underline"
           >
             Share this idea on Twitter
