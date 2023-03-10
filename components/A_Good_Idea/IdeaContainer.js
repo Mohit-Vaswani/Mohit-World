@@ -35,7 +35,7 @@ export default function IdeaContainer() {
   }
 
   const currentIdea = data[currentIdeaIndex]?.idea;
-  const websiteUrl = "mohitfun.fun/AGoodIdea";
+  const websiteUrl = "https://mohitfun.fun/AGoodIdea";
   const tweetText = `I got a good idea: "${currentIdea}" cc: `;
 
   return (
@@ -54,7 +54,11 @@ export default function IdeaContainer() {
         <h2
           className={`text-base md:text-xl lg:text-3xl text-center px-6 md:px-20 capitalize text-sky-600`}
         >
-          {isMobile ? currentIdea : isSpacebarPressed ? currentIdea : "Click Spacebar to get a new Idea."}
+          {isMobile
+            ? currentIdea
+            : isSpacebarPressed
+            ? currentIdea
+            : "Click Spacebar to get a new Idea."}
         </h2>
         {isMobile && (
           <button
@@ -71,6 +75,7 @@ export default function IdeaContainer() {
             url={websiteUrl}
             title={tweetText}
             hashtags={["goodidea"]}
+            via="your_twitter_handle"
             className="absolute right-0 bottom-0 m-6 underline"
           >
             Share this idea on Twitter
@@ -80,5 +85,3 @@ export default function IdeaContainer() {
     </section>
   );
 }
-
-
