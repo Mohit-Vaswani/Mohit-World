@@ -16,7 +16,7 @@ export default function Showcase() {
       <section className="bg-grid">
         <Header />
         <main className="h-auto flex flex-wrap gap-8 p-5 px-10 justify-center">
-          <Link href="/IsThisMovieGoodOrBad">
+          <Link href="/IsThisMovieGoodOrBad" className="ease-in duration-300 hover:scale-105">
             <Image
               src={ITMGOB}
               alt="Is This Movie Good Or Bad"
@@ -24,7 +24,7 @@ export default function Showcase() {
               className="rounded-lg"
             />
           </Link>
-          <Link href="/AGoodIdea">
+          <Link href="/AGoodIdea" className="ease-in duration-300 hover:scale-105">
             <Image
               src={AGI}
               alt="A Good Idea"
