@@ -11,7 +11,7 @@ export default function Header() {
         <Link href="/" className="">
           <Image src={logo} alt={"logo"} width="450"/>
         </Link>
-        <p className="text-base md:text-xl -mt-6">
+        <p className="text-base md:text-xl -mt-2 sm:-mt-6">
           Some cool stuff for boring people
         </p>
       </nav>
