@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 // Images
-import logo from "../public/assets/name/logo.svg";
+import logo from "../public/assets/logo.svg";
 
 export default function Header() {
   return (
