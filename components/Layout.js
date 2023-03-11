@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
 const Layout = ({ title, description, keywords, favicon, children }) => {
-  const defaultTitle = 'Mohit.Fun';
+  const defaultTitle = 'Mohit.World';
   const defaultDescription = 'Cool web-apps, tools, games, visualizations etc.';
   const defaultKeywords = 'games, visualizations, nealfun, tools';
   // const defaultFavicon = "../public/favicon.ico";
