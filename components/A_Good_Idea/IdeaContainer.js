@@ -43,7 +43,7 @@ export default function IdeaContainer() {
     <section id="AGoodIdea" className="mt-16 md:mt-24 px-0 md:px-10 lg:px-20">
       <div
         id="good_idea"
-        className="w-full h-auto px-10 py-5 bg-slate-200 text-center"
+        className="w-full h-auto px-10 py-5 bg-white text-center"
       >
         <h2 className="text-2xl sm:text-3xl lg:text-5xl">A Good Idea💡</h2>
         <p className="text-sm md:text-base lg:text-xl capitalize mt-2">
@@ -58,8 +58,8 @@ export default function IdeaContainer() {
           {isMobile
             ? currentIdea
             : isSpacebarPressed
-            ? currentIdea
-            : "Click Spacebar to get a new Idea."}
+              ? currentIdea
+              : "Click Spacebar to get a new Idea."}
         </h2>
         {isMobile && (
           <button

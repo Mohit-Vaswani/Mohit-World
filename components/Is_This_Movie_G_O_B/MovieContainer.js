@@ -59,13 +59,13 @@ export default function MovieContainer() {
         <input
           type="text"
           placeholder="Search your movie here..."
-          className="border border-r-0 bg-transparent border-gray-800 bg-white w-9/12 sm:w-4/12 outline-none px-3 rounded-l-3xl"
+          className="border border-r-0 bg-transparent border-gray-800 bg-white w-9/12 sm:w-4/12 outline-none p-4 px-4 rounded-md rounded-r-none"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
         <button
           onClick={handleSearch}
-          className="border border-l-0 border-gray-800 p-3 px-5 bg-white hover:bg-green-700 hover:text-white rounded-r-3xl"
+          className="border border-l-0 border-gray-800 p-3 px-5 bg-white hover:bg-green-700 hover:text-white rounded-md rounded-l-none"
         >
           <FiSearch />
         </button>
@@ -79,7 +79,9 @@ export default function MovieContainer() {
         {movies.map((movie) => (
           <div
             key={movie.id}
-            className="flex flex-col sm:flex-row h-auto bg-white p-3 sm:p-5 rounded-lg shadow-lg shadow-slate-300 movie-card"
+            className={`flex flex-col sm:flex-row h-auto p-3 sm:p-5 shadow-lg shadow-slate-300 movie-card ${judgeMovie(
+              movie.vote_average
+            )}`}
           >
             {movie.poster_path && (
               <Image
@@ -87,29 +89,26 @@ export default function MovieContainer() {
                 alt={movie.title}
                 width={170}
                 height={200}
-                className="rounded-lg shadow-lg shadow-slate-800"
+                className=""
               />
             )}
             <div className="p-3 sm:pl-7 relative">
-              <h2 className="text-xl text-neutral-700 font-semibold">
+              <h2 className="text-xl md:text-2xl text-black font-semibold">
                 {movie.title}
               </h2>
-              <p className="absolute bottom-0 sm:top-0 sm:bottom-auto right-0 bg-yellow-500 rounded-3xl p-2 text-xs font-semibold text-white">
+              <p className="absolute bottom-0 sm:top-0 sm:bottom-auto right-0 bg-yellow-500 p-2 px-3 text-xs font-semibold text-white">
                 {movie.vote_average}
               </p>
               {/* <p className="text-xl font-semibold py-2">{judgeMovie(movie.vote_average)}</p> */}
               {/* <p className="text-sm mt-1 movie-overview">{movie.overview}</p> */}
               <p
-                className={`text-xl font-semibold py-2 ${judgeMovie(
-                  movie.vote_average
-                )}`}
+                className={`text-xl font-semibold py-3`}
               >
                 {judgeMovie(movie.vote_average)}
               </p>
               <div
-                className={`movie-overview ${
-                  expanded ? "expanded" : ""
-                } text-xs`}
+                className={`movie-overview ${expanded ? "expanded" : ""
+                  } text-sm`}
               >
                 <p>{movie.overview}</p>
               </div>

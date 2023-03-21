@@ -89,7 +89,7 @@ body {
   height: 100%;
   margin: 0;
   background: #0e0128;
-  color: #fff;
+  color: #ffffff;
   font-family: monospace;
 }
 .bg-grid {
@@ -147,10 +147,6 @@ a {
   /* margin-top: 4rem; */
 }
 
-#back-text {
-  font-family: "Handlee", cursive !important;
-}
-
 /* Is This Movie Good Or Bad */
 
 #movieContainer {
@@ -159,7 +155,8 @@ a {
 
 .movie-card {
   width: 500px;
-  font-family: math;
+  font-family: "Karla", sans-serif;
+  font-style: italic;
   justify-content: center;
 }
 
@@ -181,24 +178,20 @@ a {
   height: auto;
 }
 
-.movie-overview.expanded::after {
-  /* content: '...less'; */
-}
-
 .Good{
-  color: green;
+  border: 2px solid #7cff75;
 }
 
 .Bad{
-  color: red;
+  border: 2px solid #ff7c7c;
 }
 
 .Average{
-  color: goldenrod;
+  border: 2px solid #fff768;
 }
 
 .Amazing{
-  color: cyan;
+  border: 2px solid rgb(117, 255, 255);
   stroke: #0e0128;
 }
 
