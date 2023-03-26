@@ -17,7 +17,7 @@ export default function MainComponent() {
               <main className="w-10/12 sm:w-8/12 h-80 bg-transparent mx-auto my-20 flex flex-col gap-4 items-center" key={money.id}>
                 <div className="w-full h-full flex justify-center">
                   <Image
-                    src={`/../public/assets/${money.image}`}
+                    src={`/assets/${money.image}`}
                     className="w-32 h-32 sm:w-40 sm:h-40"
                     width={100}
                     height={100}
