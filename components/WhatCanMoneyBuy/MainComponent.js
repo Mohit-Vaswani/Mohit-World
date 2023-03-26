@@ -1,6 +1,5 @@
 import Image from "next/image"
 import moneyData from "./moneyData"
-import border from "../../public/assets/border-special.png"
 
 export default function MainComponent() {
   return (
@@ -17,7 +16,13 @@ export default function MainComponent() {
             return (
               <main className="w-10/12 sm:w-8/12 h-80 bg-transparent mx-auto my-20 flex flex-col gap-4 items-center" key={money.id}>
                 <div className="w-full h-full flex justify-center">
-                  <Image src={money.image} className="w-32 h-32 sm:w-40 sm:h-40" width={100} height={100} alt={money.heading} />
+                  <Image
+                    src={`/../public/assets/${money.image}`}
+                    className="w-32 h-32 sm:w-40 sm:h-40"
+                    width={100}
+                    height={100}
+                    alt={money.heading}
+                  />
                 </div>
                 <div className="flex flex-col items-center w-full h-full text-center font-serif gap-3">
                   <h3 className="text-lg md:text-3xl text-green-500">{money.price}</h3>
