@@ -95,7 +95,7 @@ body {
 }
 .bg-grid {
   width: 100%;
-  height: 100vh;
+  height: 200vh;
   --line-width: 1px;
   --grid-gap: 40px;
   --line-color: #313131;

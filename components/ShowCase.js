@@ -16,7 +16,7 @@ export default function Showcase() {
     <Layout>
       <section className="bg-grid">
         <Header />
-        <main className="h-auto flex flex-wrap gap-8 p-5 px-10 justify-center">
+        <main className="h-screen flex flex-wrap gap-8 p-5 px-10 justify-center">
           <Link href="/WhatCanMoneyBuy" className="ease-in duration-300 hover:scale-105">
             <Image
               src={Money}
@@ -42,8 +42,8 @@ export default function Showcase() {
             />
           </Link>
         </main>
-        <Footer />
       </section>
+        <Footer />
     </Layout>
   );
 }
