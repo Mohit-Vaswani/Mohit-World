@@ -10,13 +10,14 @@ import Money from "../public/assets/Money.png"
 import Layout from "./Layout";
 import Header from "./Header";
 import Footer from "./Footer";
+import TwitterButton from "./TwitterButton";
 
 export default function Showcase() {
   return (
     <Layout>
       <section className="bg-grid">
         <Header />
-        <main className="h-screen flex flex-wrap gap-8 p-5 px-10 justify-center">
+        <main className="h-full flex flex-wrap gap-8 p-5 px-10 justify-center">
           <Link href="/WhatCanMoneyBuy" className="ease-in duration-300 hover:scale-105">
             <Image
               src={Money}
@@ -42,8 +43,9 @@ export default function Showcase() {
             />
           </Link>
         </main>
-      </section>
         <Footer />
+        <TwitterButton />
+      </section>
     </Layout>
   );
 }
