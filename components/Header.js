@@ -6,7 +6,7 @@ import logo from "../public/assets/logo.svg";
 
 export default function Header() {
   return (
-    <header className="flex justify-center py-10">
+    <header className="flex justify-center py-5 pt-2">
       <nav className="text-center">
         <Link href="/" className="">
           <Image src={logo} alt={"logo"} width="450"/>
