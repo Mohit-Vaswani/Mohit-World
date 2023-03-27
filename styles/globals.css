@@ -110,23 +110,20 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    background-image: linear-gradient(
-  45deg,
-  hsl(240deg 96% 19%) 0%,
-  hsl(245deg 91% 18%) 0%,
-  hsl(249deg 86% 16%) 2%,
-  hsl(252deg 81% 15%) 6%,
-  hsl(256deg 76% 13%) 17%,
-  hsl(260deg 71% 11%) 81%,
-  hsl(265deg 66% 9%) 94%,
-  hsl(270deg 58% 8%) 99%,
-  hsl(269deg 44% 6%) 100%,
-  hsl(0deg 0% 3%) 100%
-);
-  }
+html {
+  background-image: linear-gradient(45deg,
+      hsl(240deg 96% 19%) 0%,
+      hsl(245deg 91% 18%) 0%,
+      hsl(249deg 86% 16%) 2%,
+      hsl(252deg 81% 15%) 6%,
+      hsl(256deg 76% 13%) 17%,
+      hsl(260deg 71% 11%) 81%,
+      hsl(265deg 66% 9%) 94%,
+      hsl(270deg 58% 8%) 99%,
+      hsl(269deg 44% 6%) 100%,
+      hsl(0deg 0% 3%) 100%);
 }
+
 
 .logo {
   font-family: monospace;
