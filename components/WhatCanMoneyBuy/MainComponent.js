@@ -1,5 +1,6 @@
 import Image from "next/image"
 import moneyData from "./moneyData"
+import Link from "next/link";
 
 export default function MainComponent() {
   return (
@@ -28,6 +29,7 @@ export default function MainComponent() {
                   <h3 className="text-lg md:text-3xl text-green-500">{money.price}</h3>
                   <h2 className="text-lg md:text-2xl capitalize">{money.heading}</h2>
                   <p className="text-base md:text-lg">{money.fact}</p>
+                  {/* <a href={money.link} className="border-2 px-3 py-2 mt-2 rounded hover:text-yellow-300 hover:border-yellow-300">Support</a> */}
                 </div>
               </main>
             );

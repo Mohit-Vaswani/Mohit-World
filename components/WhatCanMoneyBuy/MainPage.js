@@ -1,6 +1,7 @@
 import Image from "next/image"
 import MainComponent from "./MainComponent"
 import Corner from "../../public/assets/corner-decoration.jpg"
+import CommonLogo from "../CommonLogo"
 export default function MainPage() {
     return (
         <section className="h-screen" id="wcmby">
@@ -37,6 +38,7 @@ export default function MainPage() {
                                 height={300}
                             />
                             <MainComponent />
+                            <CommonLogo/>
                         </div>
                     </div>
                 </div>

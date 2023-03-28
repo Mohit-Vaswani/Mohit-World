@@ -132,6 +132,14 @@ const moneyData = [
         price: "$5Q",
         fact: "$5 quadrillion dollars. but who's selling it?"
     },
+    {
+        id: 20,
+        image: "coffee.svg",
+        heading: "Buy Me a Coffee", 
+        price: "$5",
+        link: "https://www.buymeacoffee.com/Mohitvaswani",
+        fact: "I Know you can't afford the above things, but buying this for me is easy for you. Right!!"
+    },
 ]
 
 export default moneyData;
