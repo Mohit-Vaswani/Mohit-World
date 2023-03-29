@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../public/assets/AppHeader.svg"
+import Logo from "../public/assets/AppHeader2.svg"
 
 export default function CommonLogo() {
   return (
