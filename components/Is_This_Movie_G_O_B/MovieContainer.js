@@ -33,6 +33,12 @@ export default function MovieContainer() {
     }
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      handleSearch();
+    }
+  };
+
   const judgeMovie = (rating) => {
     if (rating < 4) {
       return "Bad 😣";
@@ -62,6 +68,7 @@ export default function MovieContainer() {
           className="border border-r-0 bg-transparent border-gray-800 bg-white w-9/12 sm:w-4/12 outline-none p-4 px-4 rounded-md rounded-r-none"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
+          onKeyDown={handleKeyDown}
         />
         <button
           onClick={handleSearch}
