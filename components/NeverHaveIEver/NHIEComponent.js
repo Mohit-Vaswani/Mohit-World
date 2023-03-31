@@ -114,8 +114,8 @@ export default function NeverHaveIEver() {
     return (
         <section className="w-full h-auto bg-slate-100 text-gray-800 pt-24 flex flex-col items-center eatingSection font-serif font-medium">
             <header>
-                <h1 className="text-4xl text-center">Never Have I Ever</h1>
-                <p>Only check the boxes that you have never done in your life.</p>
+                <h1 className="text-2xl md:text-4xl text-center">Never Have I Ever</h1>
+                <p className='text-center'>Only check the boxes that you have never done in your life.</p>
             </header>
             <main className="eatContainer">
                 <ul className="flex flex-wrap gap-4 justify-center">
