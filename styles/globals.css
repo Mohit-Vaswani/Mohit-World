@@ -66,6 +66,7 @@
     --callout-border-rgb: 108, 108, 108;
     --card-rgb: 100, 100, 100;
     --card-border-rgb: 200, 200, 200;
+    height: 100vh;
   }
 }
 
@@ -82,7 +83,7 @@ body {
   margin: 0;
   --line-width: 1px;
   --grid-gap: 40px;
-  --line-color: #353535;
+  --line-color: #58585876;
   background: repeating-linear-gradient(to bottom,
       var(--line-color),
       var(--line-color) var(--line-width),

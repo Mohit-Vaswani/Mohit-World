@@ -15,9 +15,9 @@ import TwitterButton from "./TwitterButton";
 export default function Showcase() {
   return (
     <Layout>
-      <section className="bg-grid">
+      <section>
         <Header />
-        <main className="h-full flex flex-wrap gap-8 p-5 px-10 justify-center">
+        <main className="h-full w-full flex flex-wrap gap-8 p-5 px-10 justify-center">
           <Link href="/Never-Have-I-Ever" className="ease-in duration-300 hover:scale-105">
             <Image
               src={NHIE}
