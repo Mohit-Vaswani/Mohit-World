@@ -1,13 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../public/assets/AppHeader2.svg"
+import BMC from "../public/assets/bmc-button.svg"
 
 export default function CommonLogo() {
   return (
-    <div className="flex justify-center items-center flex-col gap-3">
-      <a href="https://www.buymeacoffee.com/Mohitvaswani" className="border-2 px-3 py-2 mt-2 rounded hover:text-yellow-300 hover:border-yellow-300">Support</a>
+    <div className="flex flex-col lg:flex-row justify-between items-center gap-1 lg:gap-3 px-4 lg:px-24">
       <Link href="/">
-        <Image src={Logo} className="mb-10" alt="Logo" width={300} height={300} />
+        <Image src={Logo} className="mb-4" alt="Logo" width={350} height={350} />
+      </Link>
+      <Link href="https://www.buymeacoffee.com/Mohitvaswani">
+        <Image src={BMC} className="mb-10" alt="Logo" width={200} height={200} />
       </Link>
     </div>
   )

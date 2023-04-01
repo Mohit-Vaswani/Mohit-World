@@ -370,7 +370,7 @@ body {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 786px) {
   .corner-decoration.corner-left-top {
     display: none;
   }
@@ -385,6 +385,14 @@ body {
 
   .corner-decoration.corner-right-bottom {
     display: none;
+  }
+
+  .mid-border {
+    border: 0px solid #DE9B72;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: auto;
   }
 }
 

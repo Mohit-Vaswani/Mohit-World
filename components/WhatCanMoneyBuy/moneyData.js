@@ -136,8 +136,7 @@ const moneyData = [
         id: 20,
         image: "coffee.svg",
         heading: "Buy Me a Coffee", 
-        price: "$5",
-        link: "https://www.buymeacoffee.com/Mohitvaswani",
+        price: "$3",
         fact: "I Know you can't afford the above things, but buying this for me is easy for you. Right!!"
     },
 ]

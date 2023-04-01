@@ -111,11 +111,16 @@ export default function NeverHaveIEver() {
 
     const percent = (checkedItems.length / foodItems.length) * 100;
 
+    // Define the function for sharing the progress on social media
+    function shareProgress() {
+        const shareUrl = `https://mohit.world/Never-Have-I-Ever/progress?completed=${checkedItems.length}&total=${foodItems.length}`;
+        window.open(`https://twitter.com/intent/tweet?text=I%27ve+never+done+${checkedItems.length}%2F${foodItems.length}+things!&url=${encodeURIComponent(shareUrl)}`, '_blank');
+    }
     return (
         <section className="w-full h-auto bg-slate-100 text-gray-800 pt-24 flex flex-col items-center eatingSection font-serif font-medium">
             <header>
-                <h1 className="text-2xl md:text-4xl text-center">Never Have I Ever</h1>
-                <p className='text-center'>Only check the boxes that you have never done in your life.</p>
+                <h1 className="text-2xl md:text-5xl text-center">Never Have I Ever</h1>
+                <p className='text-base lg:text-xl my-2 text-center'>Only check the boxes that you have never done in your life.</p>
             </header>
             <main className="eatContainer">
                 <ul className="flex flex-wrap gap-4 justify-center">
@@ -135,6 +140,9 @@ export default function NeverHaveIEver() {
                     You've Never done {checkedItems.length}/{foodItems.length} things
                 </p>
                 <Progress percent={percent} />
+                <button className="mt-4 bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-md text-white" onClick={shareProgress}>
+                    Share on Twitter
+                </button>
             </div>
         </section>
     );

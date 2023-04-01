@@ -6,7 +6,7 @@ export default function MainComponent() {
   return (
     <>
       <header className="text-center my-10 mb-0">
-        <h1 className="text-xl sm:text-3xl md:text-5xl">What Can Money Buy?</h1>
+        <h1 className="text-2xl sm:text-3xl md:text-5xl">What Can Money Buy?</h1>
         <p className="text-base md:text-xl mt-2 px-4 sm:px-10">Money can't buy happiness. Those who say this are bloody losers who have no money.</p>
       </header>
       <div className="h-auto">
@@ -29,7 +29,6 @@ export default function MainComponent() {
                   <h3 className="text-lg md:text-3xl text-green-500">{money.price}</h3>
                   <h2 className="text-lg md:text-2xl capitalize">{money.heading}</h2>
                   <p className="text-base md:text-lg">{money.fact}</p>
-                  {/* <a href={money.link} className="border-2 px-3 py-2 mt-2 rounded hover:text-yellow-300 hover:border-yellow-300">Support</a> */}
                 </div>
               </main>
             );
