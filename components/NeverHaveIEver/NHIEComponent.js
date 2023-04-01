@@ -113,7 +113,7 @@ export default function NeverHaveIEver() {
 
     // Define the function for sharing the progress on social media
     function shareProgress() {
-        const shareUrl = `https://mohit.world/Never-Have-I-Ever/progress?completed=${checkedItems.length}&total=${foodItems.length}`;
+        const shareUrl = `https://mohit.world/Never-Have-I-Ever/`;
         window.open(`https://twitter.com/intent/tweet?text=I%27ve+never+done+${checkedItems.length}%2F${foodItems.length}+things!&url=${encodeURIComponent(shareUrl)}`, '_blank');
     }
     return (
