@@ -14,6 +14,10 @@ const Layout = ({ title, description, keywords, favicon, children }) => {
         <meta name="keywords" content={keywords || defaultKeywords} />
         <link rel="icon" type="image/x-icon" href={favicon} />
         <meta name="monetag" content="8155a8a1e2fc7ccb2f7e8ba85259ed8b"></meta>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+          <script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://inklinkor.com/tag.min.js',5844943,document.body||document.documentElement)</script>
+  `}} />
       </Head>
       {children}
     </div>
