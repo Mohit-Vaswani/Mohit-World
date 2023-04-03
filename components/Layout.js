@@ -12,6 +12,7 @@ const Layout = ({ title, description, keywords, favicon, children }) => {
         <title>{title || defaultTitle}</title>
         <meta name="description" content={description || defaultDescription} />
         <meta name="keywords" content={keywords || defaultKeywords} />
+        <meta name="a.validate.02" content="8isJbu_632YcJXlZhh2k7PUGB_jQWHTq9vft" />
         <link rel="icon" type="image/x-icon" href={favicon} />
       </Head>
       {children}
