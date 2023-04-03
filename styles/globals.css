@@ -399,7 +399,7 @@ body {
 
 /* Eating Checklist */
 
-.eatBox{
+.eatBox {
   width: 300px;
   height: 80px;
   display: flex;
@@ -409,11 +409,11 @@ body {
   position: relative;
 }
 
-.eatBox label{
+.eatBox label {
   padding-top: 26px;
 }
 
-.eatContainer{
+.eatContainer {
   display: flex;
   justify-content: center;
   padding: 3rem 4rem;
@@ -421,7 +421,18 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-  .eatContainer{
+  .eatContainer {
     max-width: 100%;
   }
+}
+
+/* Guess this celeb */
+
+.GuessPage {
+  font-family: fantasy;
+}
+
+.blurEffect1 {
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
 }
