@@ -7,6 +7,7 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+        <script data-cfasync="false" type="text/javascript" data-adel="atag" src="//achcdn.com/script/atg.js" czid="qokvdtsjzv"></script>
       </body>
     </Html>
   )
