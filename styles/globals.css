@@ -145,72 +145,11 @@ html {
   }
 }
 
-/* A Good Idea */
-
-#AGoodIdea {
-  font-family: sans-serif;
-  /* margin-top: 4rem; */
-}
-
-/* Is This Movie Good Or Bad */
-
-#movieContainer {
-  font-family: "Karla", sans-serif;
-}
-
-.movie-card {
-  width: 500px;
-  font-family: "Karla", sans-serif;
-  font-style: italic;
-  justify-content: center;
-}
-
-.movie-overview {
-  overflow: hidden;
-  position: relative;
-}
-
-.movie-overview::after {
-  /* content: '...more'; */
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 0 10px;
-  cursor: pointer;
-}
-
-.movie-overview.expanded {
-  height: auto;
-}
-
-.Good {
-  border: 2px solid #7cff75;
-}
-
-.Bad {
-  border: 2px solid #ff7c7c;
-}
-
-.Average {
-  border: 2px solid #fff768;
-}
-
-.Amazing {
-  border: 2px solid rgb(117, 255, 255);
-  stroke: #0e0128;
-}
-
-@media screen and (max-width: 640px) {
-  .movie-card {
-    width: 250px;
-    align-items: center;
-  }
-}
 
 body {
   padding: 0;
   margin: 0;
-  height: 100%;
+  height: 100vh;
 }
 
 
@@ -288,6 +227,7 @@ body {
   position: fixed;
   width: 3em;
   margin: -3px;
+  display: none;
 }
 
 @media (min-width: 768px) {
