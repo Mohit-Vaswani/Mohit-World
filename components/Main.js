@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
+import first from "../public/thumnail/btwe.png"
 
 const Webdata = [
     {
         id: 1,
         title: "Before the world ends",
-        image: "/../public/thumnail/btwe.png",
+        image: first,
         altdata: "Before the world ends",
         link: "/Before-The-World-Ends"
     },
@@ -22,25 +23,11 @@ export default function Main() {
                             <Link href={data.link}>
                                 <Image src={data.image} alt={data.altdata} width={300} height={200} className="rounded-md image-shadow" />
                             </Link>
-                            <h2 className="text-2xl font-semibold mt-2">{data.title}</h2>
+                            <h2 className="text-lg sm:text-2xl font-semibold mt-2">{data.title}</h2>
                         </article>
                     )
                 })
             }
-
-
-            {/* <Link href="/">
-            <Image src={one} alt="" width={350} className="rounded-3xl border-2 shadow-lg m-3"/>
-        </Link>
-        <Link href="/">
-            <Image src={two} alt="" width={350} className="rounded-3xl border-2 shadow-lg m-3"/>
-        </Link>
-        <Link href="/">
-            <Image src={three} alt="" width={350} className="rounded-3xl border-2 shadow-lg m-3"/>
-        </Link>
-        <Link href="/">
-            <Image src={four} alt="" width={350} className="rounded-3xl border-2 shadow-lg m-3"/>
-        </Link> */}
         </main>
     )
 }
