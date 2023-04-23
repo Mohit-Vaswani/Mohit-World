@@ -63,7 +63,7 @@ export default function MainComponent() {
   }
 
   return (
-    <section className="w-full h-full bg-gray-900 flex flex-col gap-5 text-white pb-10">
+    <section className="w-full h-full flex flex-col gap-5 text-white pb-10 overflow-hidden">
       {showCreateWish && <CreateWish toggleCreateWish={toggleCreateWish} />}
       <header className="mt-20 sm:mt-12 px-4 flex flex-col justify-center items-center">
         <Image src={title.src} alt="title" width={900} height={500} priority style={{maxWidth: '110%'}}/>
@@ -74,7 +74,7 @@ export default function MainComponent() {
           </span>{" "}
           that you want to do before the world ends.
         </p>
-        <p className="text-sm lg:text-lg absolute top-2 right-3 border-2 border-white px-2 sm:px-3 py-1 my-2 sm:my-0 cursor-pointer transition-all duration-300 hover:bg-gray-700" onClick={toggleCreateWish}>{buttonText}</p>
+        <p className="text-sm lg:text-xl absolute top-2 right-3 border-2 border-white px-2 sm:px-3 py-1 my-2 sm:my-0 cursor-pointer transition-all duration-300 hover:bg-gray-700" onClick={toggleCreateWish}>{buttonText}</p>
       </header>
       <main className="px-10 p-0 pb-20 w-full h-full">
         {fetchError && <p>{fetchError}</p>}
@@ -88,7 +88,7 @@ export default function MainComponent() {
           </div>
         )}
       </main>
-      <div className="flex justify-center items-center pt-10">
+      <div className="flex justify-center items-center">
         <TwitterButton />
       </div>
     </section>

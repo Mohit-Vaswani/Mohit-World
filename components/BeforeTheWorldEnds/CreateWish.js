@@ -5,6 +5,7 @@ const CreateWish = ({ onClose }) => {
     const [wish, setWish] = useState("");
     const [username, setUsername] = useState("");
     const [formError, setFormError] = useState(null);
+    const [formSubmitted, setFormSubmitted] = useState(false);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -27,11 +28,12 @@ const CreateWish = ({ onClose }) => {
             console.log(data);
             setFormError(null);
             onClose();
+            setFormSubmitted(true);
         }
     };
 
     return (
-        <div className="absolute bg-teal-600 w-full h-full flex justify-center items-center bg-black-900">
+        <div className="absolute bg-purple-600 w-full h-full flex justify-center items-center bg-black-900">
             <div className="create-card bg-black w-10/12 lg:w-5/12 h-auto p-5 relative">
                 <button
                     className="text-sm lg:absolute top-3 right-3 text-white hover:text-gray-400 focus:outline-none"
@@ -54,8 +56,20 @@ const CreateWish = ({ onClose }) => {
                         value={username}
                         onChange={(e) => setUsername(e.target.value)}
                     />
-                    <button className="border-2 border-white py-1 w-32 m-auto transition-all duration-300 hover:bg-gray-700">Create Wish</button>
+                    <button
+                        className="border-2 border-white py-1 w-32 m-auto transition-all duration-300 hover:bg-gray-700"
+                        onClick={() => {
+                            if (wish && username) {
+                                setFormSubmitted(true);
+                            } else {
+                                setFormError("Please fill in all the fields correctly");
+                            }
+                        }}
+                    >
+                        Create Wish
+                    </button>
 
+                    {formSubmitted && <p className="text-center pt-10">Done 👍 ~ Refresh the page to see your Wish.</p>}
                     {formError && <p className="text-center pt-10">{formError}</p>}
                 </form>
             </div>

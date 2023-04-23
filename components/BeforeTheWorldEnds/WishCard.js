@@ -47,7 +47,7 @@ const WishCard = ({ wish }) => {
 
 
     return (
-        <div className="border-2 border-white p-3 flex flex-col gap-5 wish-card">
+        <div className="border-2 border-white bg-black p-3 flex flex-col gap-5 wish-card">
             <p>{wish.wish}</p>
             <ul className='flex items-center flex-row-reverse justify-between'>
                 <p className="text-right">{wish.username}</p>
