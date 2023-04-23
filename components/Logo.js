@@ -8,7 +8,7 @@ export default function Logo() {
     <ul className="absolute top-2 left-5">
           <div className="logo flex items-center">
             <p className="text-lg sm:text-2xl pb-1 sm:py-3">🌍</p>
-            <Image src={mohitlogo} alt="logo" className="-ml-2 pb-3 w-36 sm:w-44"/>
+            <Image src={mohitlogo} alt="logo" width={200} height={200} className="-ml-2 pb-3 w-36 sm:w-44"/>
           </div>
         </ul>
     </Link>

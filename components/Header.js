@@ -13,11 +13,11 @@ export default function Header() {
         <ul>
           <div className="logo flex items-center">
             <p className="text-lg sm:text-2xl pb-1 sm:py-3">🌍</p>
-            <Image src={mohitlogo} alt="logo" className="-ml-2 pb-3 w-36 sm:w-44"/>
+            <Image src={mohitlogo} alt="logo" width={200} height={200} className="-ml-2 pb-3 w-36 sm:w-44"/>
           </div>
         </ul>
         <Link href="https://twitter.com/hii_mohit">
-        <Image src={Twitter} alt="twiiter" className="w-6 h-6 sm:w-8 sm:h-8" />
+        <Image src={Twitter} alt="twiiter" width={200} height={200} className="w-6 h-6 sm:w-8 sm:h-8" />
         </Link>
       </nav>
       <div className="text-center">
