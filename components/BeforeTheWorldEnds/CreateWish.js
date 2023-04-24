@@ -1,7 +1,7 @@
 import { useState } from "react";
 import supabase from "@/config/supabase";
 
-const blacklistedWords = ["fuck", "fingering", "lick", "suck", "bang", "sex", "kiss", "Shit", "poop", "Piss", "Dick", "Dick head", "ass", "asshole", "Bitch", "gay", "lesbian"]; // Add more words as needed
+const blacklistedWords = ["fuck", "fingering", "lick", "suck", "bang", "sex", "kiss", "Shit", "poop", "Piss", "Dick", "Dick head", "ass", "asshole", "Bitch", "gay", "lesbian", "s3x", "p00p", "blow job", "blowjob", "finger", "f*ck"]; // Add more words as needed
 
 const containsBlacklistedWord = (text) => {
   const words = text.toLowerCase().split(/\W+/);
@@ -57,6 +57,7 @@ const CreateWish = ({ onClose }) => {
             id="wish"
             className="bg-transparent border-2 border-white mb-4 w-full outline-none p-2"
             value={wish}
+            maxLength={200} // add maxLength attribute
             onChange={(e) => setWish(e.target.value)}
           />
           <label htmlFor="name">Name:</label>
