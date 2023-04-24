@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import first from "../public/thumnail/btwe.png"
+import first from "../public/thumnail/btwe.jpg"
 
 const Webdata = [
     {
