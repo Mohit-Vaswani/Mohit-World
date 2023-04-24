@@ -47,13 +47,13 @@ const WishCard = ({ wish }) => {
 
 
     return (
-        <div className="border-2 border-white bg-black p-3 flex flex-col gap-5 wish-card">
+        <div className="border-2 border-white bg-black p-3 flex flex-col gap-5 h-fit w-full sm:w-88 wish-card">
             <p>{wish.wish}</p>
             <ul className='flex items-center flex-row-reverse justify-between'>
                 <p className="text-right">{wish.username}</p>
                 <button
                     onClick={handleLike}
-                    className={`w-16 outline-none py-1 px-3 ${isLiked ? 'animated text-white' : ''}`}
+                    className={`w-auto outline-none py-1 px-3 ${isLiked ? 'animated text-white' : ''}`}
                 >
                     {likes}
                     <span className='pl-2'>🔥</span>

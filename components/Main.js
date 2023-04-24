@@ -18,13 +18,12 @@ export default function Main() {
             {
                 Webdata.map(data => {
                     return (
-
-                        <article key={data.id} className="">
-                            <Link href={data.link}>
+                        <Link href={data.link}>
+                            <article key={data.id} className="rounded-lg p-2">
                                 <Image src={data.image} alt={data.altdata} width={300} height={200} className="rounded-md image-shadow" />
-                            </Link>
-                            <h2 className="text-lg sm:text-2xl font-semibold mt-2">{data.title}</h2>
-                        </article>
+                                <h2 className="text-lg sm:text-2xl font-semibold mt-2">{data.title}</h2>
+                            </article>
+                        </Link>
                     )
                 })
             }
