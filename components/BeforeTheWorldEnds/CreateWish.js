@@ -68,6 +68,7 @@ const CreateWish = ({ onClose }) => {
             id="name"
             className="bg-transparent border-2 border-white mb-10 w-full outline-none p-2"
             value={username}
+            maxLength={10} 
             onChange={(e) => setUsername(e.target.value)}
           />
           <button
