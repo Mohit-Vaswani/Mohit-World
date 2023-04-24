@@ -1,7 +1,7 @@
 import { useState } from "react";
 import supabase from "@/config/supabase";
 
-const blacklistedWords = ["fuck", "fingering", "lick", "suck", "bang", "sex", "kiss", "Shit", "poop", "Piss", "Dick", "Dick head", "ass", "asshole", "Bitch", "gay", "lesbian", "s3x", "p00p", "blow job", "blowjob", "finger", "f*ck"]; // Add more words as needed
+const blacklistedWords = ["fuck", "fingering", "lick", "suck", "bang", "sex", "kiss", "Shit", "poop", "Piss", "Dick", "Dick head", "ass", "asshole", "Bitch", "gay", "lesbian", "s3x", "p00p", "blow job", "blowjob", "finger", "f*ck", "chicks", "S E X", "threesome"]; // Add more words as needed
 
 const containsBlacklistedWord = (text) => {
   const words = text.toLowerCase().split(/\W+/);
