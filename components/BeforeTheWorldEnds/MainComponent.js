@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import title from "../../public/btwe-logo.svg";
+import coffee from "../../public/coffee.png";
 import supabase from "@/config/supabase";
+import Link from "next/link";
 
 // components
 import WishCard from "./WishCard";
@@ -20,6 +21,15 @@ function TwitterButton() {
     <button onClick={shareOnTwitter} className="bg-blue-500 p-2 px-3 rounded-xl">
       Share on Twitter
     </button>
+  );
+}
+
+function BuyCoffee() {
+
+  return (
+    <Link href="https://www.buymeacoffee.com/Mohitvaswani">
+      <Image src={coffee} alt="Buy me a coffee" width={150} height={150} className="rounded-xl"/>
+    </Link>
   );
 }
 
@@ -89,8 +99,9 @@ export default function MainComponent() {
           </div>
         )}
       </main>
-      <div className="flex justify-center items-center">
+      <div className="flex gap-4 justify-center items-center">
         <TwitterButton />
+        <BuyCoffee/>
       </div>
     </section>
   );
