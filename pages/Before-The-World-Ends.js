@@ -5,7 +5,7 @@ import ParticleAnimation from "@/components/BeforeTheWorldEnds/ParticleAnimation
 
 export default function BeforeTheWorldEnds() {
   return (
-    <Layout title={`Before The World Ends`} favicon={``} description={`Write The One Wish That You Want To Do Before The World Ends.`} keywords={`Before the world ends, fun web app, neal.fun, mohit.fun, earth day`}>
+    <Layout title={`Before The World Ends`} favicon={`/btwe.ico`} description={`Write The One Wish That You Want To Do Before The World Ends.`} keywords={`Before the world ends, fun web app, neal.fun, mohit.fun, earth day`}>
       <ParticleAnimation/>
         <Logo/>
         <MainComponent/>
