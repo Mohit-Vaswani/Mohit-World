@@ -1,7 +1,7 @@
 import { useState } from "react";
 import supabase from "@/config/supabase";
 
-const blacklistedWords = ["fuck", "fingering", "lick", "suck", "bang", "sex", "kiss", "shit", "poop", "piss", "dick", "dick head", "ass", "asshole", "bitch", "gay", "lesbian", "s3x", "p00p", "blow job", "blowjob", "finger", "f*ck", "chicks", "S E X", "threesome", "pussy", "boobs", "boob", "motherfucker", "motherfucking", "fuckoff", "fuck-off", "fuck off", "condoms", "condom", "drugs", "drug", "sexy", "chubby", "chuby", "blonde"];
+const blacklistedWords = ["fuck", "fingering", "lick", "suck", "bang", "sex", "kiss", "shit", "poop", "piss", "dick", "dick head", "ass", "asshole", "bitch", "gay", "lesbian", "s3x", "p00p", "blow job", "blowjob", "finger", "f*ck", "chicks", "S E X", "threesome", "pussy", "boobs", "boob", "motherfucker", "motherfucking", "fuckoff", "fuck-off", "fuck off", "condoms", "condom", "drugs", "drug", "sexy", "chubby", "chuby", "blonde", "porn", "fucking", "penis", "masturbation", "masturbate", "fuuck", "fuuuck"];
 // Add more words as needed
 
 const containsBlacklistedWord = (text) => {
