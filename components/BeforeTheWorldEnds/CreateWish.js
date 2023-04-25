@@ -1,8 +1,7 @@
 import { useState } from "react";
 import supabase from "@/config/supabase";
 
-const blacklistedWords = ["fuck", "fingering", "lick", "suck", "bang", "sex", "kiss", "shit", "poop", "piss", "dick", "dick head", "ass", "asshole", "bitch", "gay", "lesbian", "s3x", "p00p", "blow job", "blowjob", "finger", "f*ck", "chicks", "S E X", "threesome", "pussy", "boobs", "boob", 
-"motherfucker", "motherfucking", "fuckoff", "fuck-off", "fuck off"]; 
+const blacklistedWords = ["fuck", "fingering", "lick", "suck", "bang", "sex", "kiss", "shit", "poop", "piss", "dick", "dick head", "ass", "asshole", "bitch", "gay", "lesbian", "s3x", "p00p", "blow job", "blowjob", "finger", "f*ck", "chicks", "S E X", "threesome", "pussy", "boobs", "boob", "motherfucker", "motherfucking", "fuckoff", "fuck-off", "fuck off", "condoms", "condom", "drugs", "drug", "sexy", "chubby", "chuby", "blonde"];
 // Add more words as needed
 
 const containsBlacklistedWord = (text) => {
@@ -68,7 +67,7 @@ const CreateWish = ({ onClose }) => {
             id="name"
             className="bg-transparent border-2 border-white mb-10 w-full outline-none p-2"
             value={username}
-            maxLength={10} 
+            maxLength={10}
             onChange={(e) => setUsername(e.target.value)}
           />
           <button
