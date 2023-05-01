@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { useState, useEffect } from "react"
+import Link from "next/link"
 import { ElonData } from "./elonData"
 import { BsArrowDown } from "react-icons/bs"
 import ElonFace from "../../public/elon/elon.png"
@@ -109,6 +110,9 @@ export default function ElonContainer() {
             </ul>
             <List />
             <CoffeeBtn/>
+            <Link href="https://www.freepik.com/author/freepik" target="_blank">
+            <p className="text-center pt-16 text-lg">Image Source: <span className="underline">FreePik</span></p>
+            </Link>
         </section>
     )
 }
