@@ -3,99 +3,113 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 
-:root{
+:root {
   --bg-world: #ffffff;
   --text-world: #333333;
 }
 
-body{
+body {
   padding: 0;
   margin: 0;
   background-color: var(--bg-world);
   color: var(--text-world);
-  font-family: 'circular';
+  font-family: 'circular', sans-serif;
+  scroll-behavior: smooth;
 }
 
-.main-nav{
+.main-nav {
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
-/* .image-shadow{
-  
-} */
-
-.wish-card{
-  width: 350px;
+.filter-box{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-@media screen and (max-width: 820px) {
-  .wish-card{
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 304px) {
-  .main-heading{
-    font-size: 38px;
-  }
-}
-
-.animated {
-  animation-name: shake;
-  animation-duration: 0.5s;
-}
-
-@keyframes shake {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(-5px); }
-  50% { transform: translateX(5px); }
-  75% { transform: translateX(-5px); }
-  100% { transform: translateX(0); }
-}
-
-/* Bg Effect */
-
-#space {
-  position: fixed;
-  background: black;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  z-index: -100;
-}
-.particle, .particle::after {
-  position: absolute;
-  background: magenta;
-}
-.particle::after {
+#triangle {
   content: "";
-  right: 100vw;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-left: 40px solid white;
+  border-bottom: 20px solid transparent;
+  top: 19rem;
 }
-.particle:nth-child(1){
-  animation: move 50s infinite linear;
+
+.shadow-filter {
+  filter: drop-shadow(2px 2px 5px #fff);
 }
-.particle:nth-child(2){
-  animation: move 60s infinite linear;
+
+/* Animations */
+
+.shake-horizontal {
+  -webkit-animation: shake-horizontal 1.2s cubic-bezier(0.455, 0.030, 0.515, 0.955) 2 both;
+  animation: shake-horizontal 1.2s cubic-bezier(0.455, 0.030, 0.515, 0.955) 2 both;
 }
-.particle:nth-child(3){
-  animation: move 80s infinite linear;
+
+@-webkit-keyframes shake-horizontal {
+
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+
+  80% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+
+  90% {
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px);
+  }
 }
-.particle:nth-child(1), .particle:nth-child(1)::after{
-  box-shadow: var(--shadows1);
-  width: 2px;
-  height: 2px;
-}
-.particle:nth-child(2), .particle:nth-child(2)::after{
-  box-shadow: var(--shadows2);
-  width: 4px;
-  height: 4px;
-}
-.particle:nth-child(3), .particle:nth-child(3)::after{
-  box-shadow: var(--shadows3);
-  width: 5px;
-  height: 5px;
-}
-@keyframes move {
-  from {transform: translateX(0vw);}
-  to {transform: translateX(100vw);}
+
+@keyframes shake-horizontal {
+
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+
+  80% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+
+  90% {
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px);
+  }
 }

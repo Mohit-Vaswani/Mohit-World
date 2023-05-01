@@ -1,14 +1,14 @@
-// import Link from "next/link";
-// import Image from "next/image";
-import first from "../public/thumnail/btwe.jpg"
+import Link from "next/link";
+import Image from "next/image";
+import wcemd from "../public/thumnail/wcemd.png"
 
 const Webdata = [
     {
         id: 1,
-        title: "Coming Soon...",
-        image: first,
-        altdata: "Coming Soon...",
-        link: "/Before-The-World-Ends"
+        title: "What Can Elon Musk Do ?",
+        image: wcemd,
+        altdata: "What Can Elon Musk Do ?",
+        link: "/What-Can-Elon-Musk-Do"
     },
 ]
 
@@ -18,9 +18,11 @@ export default function Main() {
             {
                 Webdata.map(data => {
                     return (
-                            <article key={data.id} className="rounded-lg p-2">
-                                {/* <Image src={data.image} alt={data.altdata} width={300} height={200} className="rounded-md image-shadow" /> */}
+                        <article key={data.id} className="rounded-lg p-2 filter-box">
+                                <Link href={data.link}>
+                                <Image src={data.image} alt={data.altdata} width={300} height={200} className="rounded-md image-shadow" />
                                 <h2 className="text-lg sm:text-2xl font-semibold mt-2">{data.title}</h2>
+                                </Link>
                             </article>
                     )
                 })
