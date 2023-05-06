@@ -21,7 +21,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
-.filter-box{
+.filter-box {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -112,4 +112,20 @@ body {
     -webkit-transform: translateX(-8px);
     transform: translateX(-8px);
   }
+}
+
+.gradient {
+  background: hsla(208, 67%, 81%, 1);
+
+  background: linear-gradient(90deg, hsla(208, 67%, 81%, 1) 0%, hsla(37, 65%, 85%, 1) 50%, hsla(301, 65%, 83%, 1) 100%);
+
+  background: -moz-linear-gradient(90deg, hsla(208, 67%, 81%, 1) 0%, hsla(37, 65%, 85%, 1) 50%, hsla(301, 65%, 83%, 1) 100%);
+
+  background: -webkit-linear-gradient(90deg, hsla(208, 67%, 81%, 1) 0%, hsla(37, 65%, 85%, 1) 50%, hsla(301, 65%, 83%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#AED1EF", endColorstr="#F2DFC1", GradientType=1);
+}
+
+.logo-wyr {
+  filter: drop-shadow(2px 2px 2px black);
 }
