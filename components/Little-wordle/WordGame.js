@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import wordle from "../../public/assets/wordle.png";
 import Image from "next/image";
 import roundsData from "./wordleData";
-// import ClueBox from "./ClueBox";
+import ClueBox from "./ClueBox";
 
 const WordGame = () => {
   const [selectedLetters, setSelectedLetters] = useState([]);
@@ -115,21 +115,22 @@ const WordGame = () => {
       )}
       <div className="flex gap-4">
         <button
-          className="mt-4 bg-white font-bold py-2 px-4 rounded custom-shadow"
+          className="common-box custom-shadow"
           onClick={handleClearClick}
         >
           Clear
         </button>
         <button
-          className="mt-4 bg-white font-bold py-2 px-4 rounded custom-shadow"
+          className="common-box custom-shadow"
           onClick={handleNextRoundClick}
         >
           Next Round
         </button>
       </div>
-      <div className="mt-4">
+      <div className="common-box custom-shadow">
         <strong>Round:</strong> {round}
       </div>
+      <ClueBox round={round} />
     </section>
   );
 };
