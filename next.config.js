@@ -1,5 +1,4 @@
-// module.exports = {
-//   images: {
-//     domains: ['imgbb.ink'],
-//   },
-// }
+/** @type {import('next').NextConfig} */
+const nextConfig = {}
+
+module.exports = nextConfig

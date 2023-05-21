@@ -1,5 +1,5 @@
 {
-  "name": "mohit-fun-latest",
+  "name": "mohit-world",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,20 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.21.0",
-    "@vercel/analytics": "^0.1.11",
-    "cloudinary-react": "^1.8.1",
-    "next": "13.2.3",
-    "next-cloudinary": "^4.4.0",
+    "autoprefixer": "10.4.14",
+    "next": "13.4.3",
+    "postcss": "8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.8.0",
-    "react-share": "^4.4.1",
-    "supabase": "^1.50.11"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.7"
+    "tailwindcss": "3.3.2"
   }
 }

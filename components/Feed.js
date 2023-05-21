@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import wcemd from "../public/thumnail/wcemd.png"
+import little_wordle from "../public/thumnail/4.png"
 
 const Webdata = [
     {
@@ -9,6 +10,13 @@ const Webdata = [
         image: wcemd,
         altdata: "What Can Elon Musk Do ?",
         link: "/What-Can-Elon-Musk-Do"
+    },
+    {
+        id: 2,
+        title: "Little Wordle",
+        image: little_wordle,
+        altdata: "Little Wordle",
+        link: "/little-wordle"
     },
 ]
 
