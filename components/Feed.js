@@ -13,10 +13,10 @@ const Webdata = [
     },
     {
         id: 2,
-        title: "Little Wordle",
+        title: "Short Wordle",
         image: little_wordle,
-        altdata: "Little Wordle",
-        link: "/little-wordle"
+        altdata: "Short Wordle",
+        link: "/short-wordle"
     },
 ]
 
