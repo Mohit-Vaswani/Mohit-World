@@ -1,4 +1,5 @@
 import "@styles/globals.css";
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
   title: "Mohit World",
@@ -14,6 +15,7 @@ const RootLayout = ({ children }) => (
 
         <main className='app'>
           {children}
+          <Analytics />
         </main>
     </body>
   </html>
