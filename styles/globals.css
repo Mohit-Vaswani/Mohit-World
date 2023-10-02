@@ -22,3 +22,21 @@ body{
 main h1{
     line-height: 1.3 !important;
 }
+
+.mobileNav{
+    top: 0rem;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+    background: #D0BFFF;
+}
+
+.mobileNav li{
+    font-size: 3rem;
+
+}
