@@ -1,5 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Inter&family=Playfair+Display&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    font-family: 'Inter', sans-serif;
+    color: #614BC3;
+    background: #D0BFFF;
+}
+
+.Croissant{
+    font-family: 'Croissant One', cursive;
+}
+
+.Playfair{
+    font-family: 'Playfair Display', serif;
+}
+
+main h1{
+    line-height: 1.3 !important;
+}
