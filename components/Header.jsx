@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
@@ -11,7 +12,9 @@ const Header = () => {
 
   return (
     <nav className="flex justify-between items-center text-3xl my-40 mt-20 sm:mt-32">
-      <div className="logo font-semibold">hii_mohit</div>
+      <div className="logo">
+        <Image src="/assets/victory.svg" alt='logo' width={70} height={70} />
+      </div>
       <div className="mobile-nav-icon block md:hidden" onClick={toggleNav}>
         {isOpen ? <FaTimes /> : <FaBars />}
       </div>
