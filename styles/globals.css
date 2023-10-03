@@ -5,6 +5,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+    scroll-behavior: smooth;
+}
+  
+
 body {
     font-family: 'Inter', sans-serif;
     color: #614BC3;
@@ -96,3 +101,35 @@ main h1 {
     color: white;
 }
 
+/* Scroll */
+ 
+.go-down-btn {
+    z-index: 1;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 3rem;
+}
+.go-down-btn svg {
+    position: relative;
+    z-index: -1;
+    display: block;
+}
+.go-down-btn text {
+    font-size: 11px;
+    transform-origin: center;
+}
+@keyframes rotate-btn {
+    to {
+        transform: rotate(360deg);
+   }
+}
+.go-down-btn text {
+    animation: rotate-btn 10s linear infinite;
+}
+
+.go-down-btn:hover text {
+    cursor: pointer;
+    animation: rotate-btn 1s linear infinite;
+}

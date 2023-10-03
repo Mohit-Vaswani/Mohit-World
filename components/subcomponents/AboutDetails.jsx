@@ -3,8 +3,7 @@ import Image from "next/image"
 const AboutDetails = () => {
     return (
         <main className=" flex flex-col">
-            <div className="flex gap-28 justify-between items-center">
-
+            <div className="flex flex-col lg:flex-row gap-16 lg:gap-28 justify-between items-center">
             <Image src="/assets/mymainpic.jpg" alt="My Pic" width={350} height={350} />
             <div className="info text-xl">
                 <h2 className="text-6xl mb-6">Hi there!</h2>
@@ -18,8 +17,8 @@ const AboutDetails = () => {
             </div>
 
             <div className="my-28 skillsSection">
-                <h2 className="text-5xl mb-9">My Skills So Far</h2>
-                <ul className="flex gap-x-10 gap-y-6 w-7/12 flex-wrap">
+                <h2 className="text-4xl sm:text-5xl mb-9">My Skills So Far</h2>
+                <ul className="flex gap-x-4 sm:gap-x-10 gap-y-6 w-full sm:w-7/12 flex-wrap">
                     <li>ReactJs</li>
                     <li>NextJs</li>
                     <li>TypeScript</li>
@@ -37,8 +36,8 @@ const AboutDetails = () => {
                 </ul>
             </div>
             <div className="mb-20 skillsSection">
-                <h2 className="text-5xl mb-9">Tools I use daily</h2>
-                <ul className="flex gap-x-10 gap-y-6 w-7/12 flex-wrap">
+                <h2 className="text-4xl sm:text-5xl mb-9">Tools I use daily</h2>
+                <ul className="flex gap-x-4 sm:gap-x-10 gap-y-6 w-full sm:w-7/12 flex-wrap">
                     <li>VS Code</li>
                     <li>Github</li>
                     <li>Chrome Developer Tools</li>
