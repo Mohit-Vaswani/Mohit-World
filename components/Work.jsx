@@ -1,11 +1,12 @@
 import React from 'react'
 import Header from './Header'
+import WorkDetails from './subcomponents/WorkDetails'
 
 const Work = () => {
   return (
-    <main className='flex flex-col w-full h-screen px-10 md:px-32 lg:px-52 workPage'>
+    <main className='flex flex-col w-full h-full px-10 md:px-32 lg:px-52 workPage'>
         <Header/>
-        <h1 className='text-4xl sm:text-5xl lg:text-7xl'>This is Work</h1>
+        <WorkDetails/>
     </main>
   )
 }

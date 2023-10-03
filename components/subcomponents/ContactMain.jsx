@@ -10,8 +10,8 @@ const ContactMain = () => {
 
   return (
     <main className='flex flex-col gap-14 contactList'>
-      <h1 className='text-8xl'>Say hello </h1>
-      <ul className='flex text-4xl gap-12'>
+      <h1 className='text-5xl sm:text-6xl xl:text-8xl'>Say hello </h1>
+      <ul className='flex flex-wrap text-xl sm:text-2xl xl:text-4xl gap-6 sm:gap-12'>
         <li>
           <a href={`mailto:${email}`}>
             <FiMail /> Mail

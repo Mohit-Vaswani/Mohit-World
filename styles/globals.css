@@ -56,8 +56,8 @@ main h1 {
 }
 
 .workPage {
-    color: #016A70;
-    background: #CEDEBD;
+    color: #ffffff;
+    background: #000000;
 }
 
 .contactPage {
@@ -88,12 +88,18 @@ main h1 {
     border-radius: 50px;
 }
 
+.skillsSection ul li:hover{
+    background: #b48037;
+    color: white;
+}
+
 .contactList ul li a{
     display: flex;
     gap: 1rem;
     padding: 1rem 2rem;
     border: 2px solid #526D82;
     border-radius: 50px;
+    align-items: center;
 }
 
 .contactList ul li a:hover{
@@ -132,4 +138,11 @@ main h1 {
 .go-down-btn:hover text {
     cursor: pointer;
     animation: rotate-btn 1s linear infinite;
+}
+
+
+/* Blogs */
+
+.blog-card{
+    min-height: 200px;
 }
