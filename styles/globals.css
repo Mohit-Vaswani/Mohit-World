@@ -39,7 +39,7 @@ main h1 {
     justify-content: center;
     margin: 0;
     align-items: center;
-    background: #D0BFFF;
+    background: #fff;
 }
 
 .mobileNav li {
@@ -121,6 +121,9 @@ main h1 {
     position: relative;
     z-index: -1;
     display: block;
+    top: 2rem;
+    left: 2rem;
+    padding: 1rem;
 }
 .go-down-btn text {
     font-size: 11px;
