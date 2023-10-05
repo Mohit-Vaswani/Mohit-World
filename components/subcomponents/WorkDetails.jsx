@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import BlogSection from './BlogSection';
+import ProjectSection from './ProjectSection';
 
 const WorkDetails = () => {
   const [activeTab, setActiveTab] = useState('projects'); // Initialize the active tab as 'projects'
@@ -11,19 +12,17 @@ const WorkDetails = () => {
 
   return (
     <main>
-      <div className="flex w-full text-4xl text-center border-b border-white">
+      <div className="flex w-full text-2xl sm:text-4xl text-center border-b border-white">
         <div
-          className={`w-1/2 border-white h-20 pt-4 ${
-            activeTab === 'projects' ? 'active-tab' : ''
-          }`}
+          className={`w-1/2 border-white h-16 sm:h-20 pt-4 ${activeTab === 'projects' ? 'active-tab bg-white' : ''
+            }`}
           onClick={() => handleTabClick('projects')}
         >
           Projects
         </div>
         <div
-          className={`w-1/2 h-20 pt-4 ${
-            activeTab === 'blogs' ? 'active-tab' : ''
-          }`}
+          className={`w-1/2 h-16 sm:h-20 pt-4 ${activeTab === 'blogs' ? 'active-tab bg-white' : ''
+            }`}
           onClick={() => handleTabClick('blogs')}
         >
           Blogs
@@ -31,10 +30,12 @@ const WorkDetails = () => {
       </div>
       <div>
         <div>
-          {activeTab === 'projects' && <div>Here is the projects</div>}
+          {activeTab === 'projects' && <div>
+            <ProjectSection />
+          </div>}
           {activeTab === 'blogs' && <div>
-            <BlogSection/>
-            </div>}
+            <BlogSection />
+          </div>}
         </div>
       </div>
     </main>

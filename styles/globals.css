@@ -56,8 +56,8 @@ main h1 {
 }
 
 .workPage {
-    color: #ffffff;
-    background: #000000;
+    color: #0582ca;
+    background: #b6ccfe;
 }
 
 .contactPage {
@@ -74,7 +74,7 @@ main h1 {
 }
 
 .workPage .logo>img {
-    filter: invert(20%) sepia(61%) saturate(3303%) hue-rotate(166deg) brightness(96%) contrast(99%);
+    filter: invert(35%) sepia(86%) saturate(991%) hue-rotate(171deg) brightness(96%) contrast(97%);
 }
 
 .contactPage .logo>img {
