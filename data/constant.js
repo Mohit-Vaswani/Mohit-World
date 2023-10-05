@@ -36,3 +36,29 @@ export const projectData = [
         year: "2022"
     },
 ]
+
+export const skills = [
+    { skill: "ReactJs" },
+    { skill: "NextJs" },
+    { skill: "TypeScript" },
+    { skill: "React Native" },
+    { skill: "Tailwind Css" },
+    { skill: "JavaScript" },
+    { skill: "HTML" },
+    { skill: "CSS" },
+    { skill: "Supabase" },
+    { skill: "Firebase" },
+    { skill: "NodeJs" },
+    { skill: "MongoDB" },
+    { skill: "Version Control" },
+    { skill: "Responsive design" },
+    { skill: "Material UI" },
+];
+
+export const tools = [
+    "VS Code",
+    "Github",
+    "Chrome Developer Tools",
+    "Postman",
+    "ChatGpt",
+];

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FiMail, FiMessageSquare, FiTwitter, FiLinkedin } from 'react-icons/fi';
+import { AiFillGithub } from 'react-icons/ai';
 
 const ContactMain = () => {
   // Replace these with your actual contact details
@@ -7,6 +8,7 @@ const ContactMain = () => {
   const phoneNumber = '6378763018';
   const twitterUsername = 'hii_mohit';
   const linkedinUsername = 'mohit-vaswani-10';
+  const githubUsername = 'mohit-vaswani';
 
   return (
     <main className='flex flex-col gap-14 contactList'>
@@ -30,6 +32,11 @@ const ContactMain = () => {
         <li>
           <a href={`https://www.linkedin.com/in/${linkedinUsername}`}>
             <FiLinkedin /> LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href={`https://github.com/${githubUsername}`}>
+            <AiFillGithub /> Github
           </a>
         </li>
       </ul>

@@ -93,6 +93,16 @@ main h1 {
     color: white;
 }
 
+.experienceSection ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.experienceSection .expCard{
+    margin-bottom: 2rem;
+}
+
 .contactList ul li a{
     display: flex;
     gap: 1rem;
@@ -149,3 +159,4 @@ main h1 {
 .blog-card{
     min-height: 200px;
 }
+

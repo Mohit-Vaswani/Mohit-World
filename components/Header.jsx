@@ -23,7 +23,7 @@ const Header = () => {
       </div>
       <ul
         className={`${
-          isOpen ? 'block absolute p-10 mobileNav' : 'hidden'
+          isOpen ? 'block absolute p-10 z-10 mobileNav' : 'hidden'
         } md:flex gap-12 items-center md:items-stretch mt-4 md:mt-0`}
       >
         <div className="mobile-nav-icon block md:hidden absolute top-0 right-0 m-10 sm:m-20" onClick={toggleNav}>
