@@ -14,6 +14,33 @@ body {
     font-family: 'Inter', sans-serif;
     color: #614BC3;
     background: #D0BFFF;
+    overflow: hidden;
+}
+
+canvas{
+    position: absolute;
+    top: 5rem;
+    left: 29rem;
+}
+
+@media screen and (max-width: 1450px) {
+    canvas {
+        visibility: hidden;
+    }
+  }
+  
+
+.circularText{
+    background: #614BC3;
+    color: white;
+}
+
+@media screen and (max-width: 640px) {
+    .circularText{
+        background: transparent;
+        color: #614BC3;
+        text-decoration: underline;
+    }
 }
 
 .Croissant {
@@ -159,4 +186,3 @@ main h1 {
 .blog-card{
     min-height: 200px;
 }
-
