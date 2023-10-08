@@ -48,10 +48,17 @@ export const skills = [
     { skill: "CSS" },
     { skill: "Supabase" },
     { skill: "Firebase" },
-    { skill: "NodeJs" },
-    { skill: "MongoDB" },
     { skill: "Version Control" },
     { skill: "Responsive design" },
+    { skill: "Material UI" },
+];
+export const newskills = [
+    { skill: "SQL" },
+    { skill: "Blockchain" },
+    { skill: "Solidity" },
+    { skill: "NodeJs" },
+    { skill: "MongoDB" },
+    { skill: "ExpressJs" },
     { skill: "Material UI" },
 ];
 

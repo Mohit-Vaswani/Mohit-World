@@ -26,7 +26,8 @@ canvas{
 
 @media screen and (max-width: 1450px) {
     canvas {
-        visibility: hidden;
+        /* visibility: hidden; */
+        display: none !important;
     }
   }
   

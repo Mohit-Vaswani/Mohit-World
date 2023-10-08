@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { skills, tools } from "@data/constant"
+import { skills, tools, newskills } from "@data/constant"
 import Link from "next/link"
 
 const AboutDetails = () => {
@@ -60,6 +60,14 @@ const AboutDetails = () => {
                 <h2 className="text-4xl sm:text-5xl mb-9">My Strong Skills</h2>
                 <ul className="flex gap-x-4 sm:gap-x-10 gap-y-6 w-full sm:w-7/12 flex-wrap">
                     {skills.map((item, index) => (
+                        <li key={index}>{item.skill}</li>
+                    ))}
+                </ul>
+            </div>
+            <div className="mb-20 skillsSection">
+                <h2 className="text-4xl sm:text-5xl mb-9 capitalize">Also worked with these tech</h2>
+                <ul className="flex gap-x-4 sm:gap-x-10 gap-y-6 w-full sm:w-7/12 flex-wrap">
+                {newskills.map((item, index) => (
                         <li key={index}>{item.skill}</li>
                     ))}
                 </ul>
