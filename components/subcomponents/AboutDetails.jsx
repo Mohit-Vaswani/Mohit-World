@@ -18,12 +18,12 @@ const AboutDetails = () => {
                 </div>
             </div>
 
-            <div className="mt-28 experienceSection">
-                <h2 className="text-4xl sm:text-5xl mb-9">My Experience So Far</h2>
+            <div className="mt-10 sm:mt-28 experienceSection">
+                <h2 className="text-3xl sm:text-5xl mb-9">My Experience So Far</h2>
                 <ul>
-                    <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row justify-between text-lg expCard">
-                        <div className="flex flex-col gap-2 w-8/12">
-                            <h3 className="text-2xl font-semibold">Frontend Developer</h3>
+                    <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row justify-between text-base sm:text-lg expCard">
+                        <div className="flex flex-col gap-2 w-full sm:w-8/12">
+                            <h3 className="text-xl sm:text-2xl font-semibold">Frontend Developer</h3>
                             <Link href=""><p className="underline">Craxinno Technology Pvt Ltd</p></Link>
 
                             <ul className="list-disc">
@@ -40,9 +40,9 @@ const AboutDetails = () => {
                             <p>Dec 2022 to Sep 2023 · 10 month</p>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row justify-between text-lg expCard">
-                        <div className="flex flex-col gap-2 w-8/12">
-                            <h3 className="text-2xl font-semibold">Frontend Intern</h3>
+                    <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row justify-between text-base sm:text-lg expCard">
+                        <div className="flex flex-col gap-2 w-full sm:w-8/12">
+                            <h3 className="text-xl sm:text-2xl font-semibold">Frontend Intern</h3>
                             <Link href=""><p className="underline">Codeplanet Technologies Pvt Ltd</p></Link>
 
                             <ul className="list-disc">
@@ -56,24 +56,24 @@ const AboutDetails = () => {
 
                 </ul>
             </div>
-            <div className="my-28 skillsSection">
-                <h2 className="text-4xl sm:text-5xl mb-9">My Strong Skills</h2>
+            <div className="my-10 sm:my-28 skillsSection text-sm sm:text-lg">
+                <h2 className="text-3xl sm:text-5xl mb-9">My Strong Skills</h2>
                 <ul className="flex gap-x-4 sm:gap-x-10 gap-y-6 w-full sm:w-7/12 flex-wrap">
                     {skills.map((item, index) => (
                         <li key={index}>{item.skill}</li>
                     ))}
                 </ul>
             </div>
-            <div className="mb-20 skillsSection">
-                <h2 className="text-4xl sm:text-5xl mb-9 capitalize">Also worked with these tech</h2>
+            <div className="my-10 sm:my-28 skillsSection text-sm sm:text-lg">
+                <h2 className="text-3xl sm:text-5xl mb-9">Also worked with these tech</h2>
                 <ul className="flex gap-x-4 sm:gap-x-10 gap-y-6 w-full sm:w-7/12 flex-wrap">
                 {newskills.map((item, index) => (
                         <li key={index}>{item.skill}</li>
                     ))}
                 </ul>
             </div>
-            <div className="mb-20 skillsSection">
-                <h2 className="text-4xl sm:text-5xl mb-9">Tools I use daily</h2>
+            <div className="my-10 sm:my-28 skillsSection text-sm sm:text-lg">
+                <h2 className="text-3xl sm:text-5xl mb-9">Tools I use daily</h2>
                 <ul className="flex gap-x-4 sm:gap-x-10 gap-y-6 w-full sm:w-7/12 flex-wrap">
                     {tools.map((item, index) => (
                         <li key={index}>{item}</li>
