@@ -14,7 +14,7 @@ body {
     font-family: 'Inter', sans-serif;
     color: #614BC3;
     background: #D0BFFF;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 canvas{
