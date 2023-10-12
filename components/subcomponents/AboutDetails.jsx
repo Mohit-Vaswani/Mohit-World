@@ -56,7 +56,7 @@ const AboutDetails = () => {
 
                 </ul>
             </div>
-            <div className="my-10 sm:my-28 skillsSection text-sm sm:text-lg">
+            <div className="my-10 sm:my-12 skillsSection text-sm sm:text-lg">
                 <h2 className="text-3xl sm:text-5xl mb-9">My Strong Skills</h2>
                 <ul className="flex gap-x-4 sm:gap-x-10 gap-y-6 w-full sm:w-7/12 flex-wrap">
                     {skills.map((item, index) => (
@@ -64,7 +64,7 @@ const AboutDetails = () => {
                     ))}
                 </ul>
             </div>
-            <div className="my-10 sm:my-28 skillsSection text-sm sm:text-lg">
+            <div className="my-10 sm:my-12 skillsSection text-sm sm:text-lg">
                 <h2 className="text-3xl sm:text-5xl mb-9">Also worked with these tech</h2>
                 <ul className="flex gap-x-4 sm:gap-x-10 gap-y-6 w-full sm:w-7/12 flex-wrap">
                 {newskills.map((item, index) => (
@@ -72,7 +72,7 @@ const AboutDetails = () => {
                     ))}
                 </ul>
             </div>
-            <div className="my-10 sm:my-28 skillsSection text-sm sm:text-lg">
+            <div className="my-10 sm:my-12 skillsSection text-sm sm:text-lg">
                 <h2 className="text-3xl sm:text-5xl mb-9">Tools I use daily</h2>
                 <ul className="flex gap-x-4 sm:gap-x-10 gap-y-6 w-full sm:w-7/12 flex-wrap">
                     {tools.map((item, index) => (
