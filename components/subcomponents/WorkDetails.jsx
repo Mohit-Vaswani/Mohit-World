@@ -12,16 +12,16 @@ const WorkDetails = () => {
 
   return (
     <main>
-      <div className="flex w-full text-2xl sm:text-4xl text-center border-b border-white">
+      <div className="flex w-full text-2xl sm:text-4xl text-center transition-all duration-300 cursor-pointer">
         <div
-          className={`w-1/2 border-white h-16 sm:h-20 pt-4 ${activeTab === 'projects' ? 'active-tab bg-white' : ''
+          className={`w-1/2 border-white h-16 sm:h-20 pt-4 rounded-full transition-all duration-300 ${activeTab === 'projects' ? 'active-tab bg-white' : ''
             }`}
           onClick={() => handleTabClick('projects')}
         >
           Projects
         </div>
         <div
-          className={`w-1/2 h-16 sm:h-20 pt-4 ${activeTab === 'blogs' ? 'active-tab bg-white' : ''
+          className={`w-1/2 h-16 sm:h-20 pt-4 rounded-full transition-all duration-300 ${activeTab === 'blogs' ? 'active-tab bg-white' : ''
             }`}
           onClick={() => handleTabClick('blogs')}
         >
