@@ -35,7 +35,7 @@ const Header = () => {
       <Link href="/work">
         <li className='hoverNavItems'>work</li>
       </Link>
-      <Link href="https://drive.google.com/file/d/1WPlT0Y9S-m-wCWJOWG7gd3lcj0_Onmrl/view?usp=sharing">
+      <Link href="https://drive.google.com/file/d/1cGZ5SAzW4zYljBxvDkaeLwn6Vs33yefP/view?usp=sharing">
         <li className='hoverNavItems'>resume</li>
       </Link>
       <Link href="/contact">
