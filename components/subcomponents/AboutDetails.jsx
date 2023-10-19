@@ -23,8 +23,21 @@ const AboutDetails = () => {
                 <ul>
                     <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row justify-between text-base sm:text-lg expCard">
                         <div className="flex flex-col gap-2 w-full sm:w-8/12">
+                            <h3 className="text-xl sm:text-2xl font-semibold">Software Engineer [ Frontend ] </h3>
+                            <Link href="https://www.stakehub.in/"><p className="underline">Stakehub</p></Link>
+
+                            <ul className="list-disc">
+                                <li >Building Frontend with NextJs and integrating Backend API's.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>Contract work · 1 month</p>
+                        </div>
+                    </div>
+                    <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row justify-between text-base sm:text-lg expCard">
+                        <div className="flex flex-col gap-2 w-full sm:w-8/12">
                             <h3 className="text-xl sm:text-2xl font-semibold">Frontend Developer</h3>
-                            <Link href=""><p className="underline">Craxinno Technology Pvt Ltd</p></Link>
+                            <Link href="https://www.craxinno.com/"><p className="underline">Craxinno Technology Pvt Ltd</p></Link>
 
                             <ul className="list-disc">
                                 <li >Designed and developed dynamic and responsive websites using javascript, and
@@ -43,7 +56,7 @@ const AboutDetails = () => {
                     <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row justify-between text-base sm:text-lg expCard">
                         <div className="flex flex-col gap-2 w-full sm:w-8/12">
                             <h3 className="text-xl sm:text-2xl font-semibold">Frontend Intern</h3>
-                            <Link href=""><p className="underline">Codeplanet Technologies Pvt Ltd</p></Link>
+                            <Link href="https://www.linkedin.com/company/code-planet-technologies/"><p className="underline">Codeplanet Technologies Pvt Ltd</p></Link>
 
                             <ul className="list-disc">
                                 <li>I have been actively involved in managing the company's website development while also assisting students with their Frontend development inquiries. This dual role has allowed me to continuously expand my knowledge and skills in the field.</li>
