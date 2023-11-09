@@ -12,7 +12,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center text-3xl my-20 sm:my-40 mt-20 sm:mt-32">
+    <nav className="flex justify-between items-center text-3xl my-16">
       <Link href="/">
       <div className="logo">
         <Image src="/assets/victory.svg" alt='logo' width={70} height={70} />

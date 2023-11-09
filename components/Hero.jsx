@@ -6,10 +6,10 @@ import ThreeJSComponent from './subcomponents/ThreeD';
 
 const Hero = () => {
   return (
-    <main className='flex flex-col w-full h-screen px-10 md:px-32 lg:px-52 z-30 relative overflow-hidden'>
+    <main className='flex flex-col w-full h-screen px-10 md:px-32 lg:px-32 z-30 relative overflow-hidden'>
       <Header />
       <div className='flex flex-col'>
-        <h1 className='text-4xl sm:text-5xl lg:text-7xl'>
+        <h1 className='text-4xl sm:text-5xl lg:text-6xl'>
           hello I'm <span className='Croissant'>mohit</span> <br /> - a developer{' '}
           <br /> w/ a focus on frontend <br />{' '}
           <span className='Playfair'>&</span> scaling products.
