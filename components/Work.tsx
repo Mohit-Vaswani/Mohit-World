@@ -30,8 +30,8 @@ const Work = () => {
             <p className="p-4">{project.desc}</p>
             <div className="flex gap-2 flex-wrap px-4 pb-4">
               {
-                project.stack.map((item) => (
-                  <p className="bg-gray-200 p-1 px-3 rounded-full">{item}</p>
+                project.stack.map((item, index) => (
+                  <p key={index} className="bg-gray-200 p-1 px-3 rounded-full">{item}</p>
                 ))
               }
             </div>
