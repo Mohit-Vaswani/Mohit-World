@@ -1,12 +1,11 @@
-import Work from '@/components/Work'
 import React from 'react'
 
-const products = () => {
+const crafts = () => {
   return (
     <div className='flex justify-start items-center my-10 min_width mx-auto'>
-        <Work/>
+        My Crafts Coming Soon...
     </div>
   )
 }
 
-export default products
+export default crafts
